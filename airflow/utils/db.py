@@ -284,6 +284,10 @@ def initdb(rbac=False):
         models.Connection(
             conn_id='cassandra_default', conn_type='cassandra',
             host='localhost', port=9042))
+    merge_conn(
+        models.Connection(
+            conn_id='cos_default', conn_type='cos',
+            schema='default',))
 
     # Known event types
     KET = models.KnownEventType

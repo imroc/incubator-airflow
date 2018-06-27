@@ -673,6 +673,7 @@ class Connection(Base, LoggingMixin):
         ('segment', 'Segment',),
         ('azure_data_lake', 'Azure Data Lake'),
         ('cassandra', 'Cassandra',),
+        ('cos', 'Tencent Cloud Object Storage',),
     ]
 
     def __init__(

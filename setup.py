@@ -195,6 +195,7 @@ vertica = ['vertica-python>=0.5.1']
 webhdfs = ['hdfs[dataframe,avro,kerberos]>=2.0.4']
 winrm = ['pywinrm==0.2.2']
 zendesk = ['zdesk']
+cos = ['cos-python-sdk-v5']
 
 all_dbs = postgres + mysql + hive + mssql + hdfs + vertica + cloudant + druid + pinot \
     + cassandra + mongo
@@ -224,7 +225,7 @@ devel_all = (sendgrid + devel + all_dbs + doc + samba + s3 + slack + crypto + or
              docker + ssh + kubernetes + celery + azure_blob_storage + redis + gcp_api +
              datadog + zendesk + jdbc + ldap + kerberos + password + webhdfs + jenkins +
              druid + pinot + segment + snowflake + elasticsearch + azure_data_lake +
-             atlas)
+             atlas + cos)
 
 # Snakebite & Google Cloud Dataflow are not Python 3 compatible :'(
 if PY3:
