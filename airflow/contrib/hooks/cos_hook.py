@@ -51,8 +51,8 @@ class CloudObjectStorageHook(BaseHook):
             Secret_id=self._get_field('secret_id'),
             Secret_key=self._get_field('secret_key'),
             Region=self._get_field('region'),
-            Token=self._get_field('token'),
-            Schema=self._get_field('schema'))
+            Scheme=self._get_field('schema'),
+            Token=self._get_field('token'))
         # 2. 获取客户端对象
         return CosS3Client(config)
 
